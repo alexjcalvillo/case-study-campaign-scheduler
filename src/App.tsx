@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ScheduleCard } from './components/panels/ScheduleCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Hello from React</p>
+      <ScheduleCard>
+        <div style={{ width: '100%', backgroundColor: 'whitesmoke' }}>
+          <h1>Heading element</h1>
+        </div>
+        <div style={{ display: 'flex', padding: 'none', alignItems: 'center' }}>
+          <div style={{ width: '60%', height: '100%', backgroundColor: 'black' }}>
+            <p>Secton 1</p>
+          </div>
+          <div style={{ width: '40%', height: '100%', backgroundColor: 'green' }}>
+            <p>Section 2</p>
+          </div>
+        </div>
+        {/* <label htmlFor="input">Test</label>
+        <input type="text" id="input" /> */}
+      </ScheduleCard>
     </div>
   );
 }
