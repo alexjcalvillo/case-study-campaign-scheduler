@@ -60,10 +60,8 @@ export const ScheduleCard: React.FC = () => {
         const getDates = async () => {
             try {
                 const response = await chronometer.post('/', schedule);
-                console.log(response);
                 setDates(response.data.data);
             } catch (error) {
-                console.log(error);
                 setError('No valid dates exists within your parameters. Please try changing your campaign schedule dates.')
             }
         }
@@ -170,7 +168,6 @@ export const ScheduleCard: React.FC = () => {
         });
     }
 
-    console.log(schedule);
     return (
         <Card title="Campaign Scheduler" style={{ margin: 'auto', width: '75%', fontWeight: '300' }} headStyle={{ backgroundColor: '#eef8fb', fontSize: '2rem', fontWeight: '200' }}>
             <Row>
