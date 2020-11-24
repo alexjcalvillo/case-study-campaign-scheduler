@@ -8,8 +8,7 @@ import 'antd/dist/antd.css';
 
 function App() {
   return (
-    <div>
-      <p>Hello from React</p>
+    <div style={{ paddingTop: '10rem' }}>
       <ScheduleCard />
     </div >
   );

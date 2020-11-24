@@ -38,7 +38,7 @@ export const ScheduleCard: React.FC = () => {
         'saturday': false,
     });
     // schedule is a copy of Schedule interface defaulted to required params and set to a "daily" campaign schedule
-    // default
+    // defaults set as specified
     const [schedule, setSchedule] = useState<Schedule>({
         date_start: moment().format('YYYY-MM-DD') || '',
         // date_end: undefined, optional param
@@ -52,7 +52,7 @@ export const ScheduleCard: React.FC = () => {
             }
         }
     });
-    // This could be named results to - used to hold campaign dates received from API
+    // This could be named results too - used to hold campaign dates received from API
     const [dates, setDates] = useState<string[]>([]);
 
     // API call to update when schedule is changed through user interaction
