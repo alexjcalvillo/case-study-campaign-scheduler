@@ -15,11 +15,4 @@ function App() {
   );
 }
 
-const headingEl = {
-  padding: '0.5rem',
-  backgroundColor: '#D9D9D9',
-  borderTopLeftRadius: '4px',
-  borderTopRightRadius: '4px',
-}
-
 export default App;
